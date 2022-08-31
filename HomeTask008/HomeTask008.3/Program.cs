@@ -63,4 +63,4 @@ try
   }
   CW($"{prev} встречается {count} раз");
 }
-catch (InvalidCastException e) { }
+catch (Exception e) { CW(e.Message); }
