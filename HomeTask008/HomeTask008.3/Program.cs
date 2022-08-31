@@ -20,8 +20,8 @@ try
   int[,] array = new int[rows, columns];
   int[] array2 = new int[rows * columns];
   int index = 0;
-  int count = 1;
-  int prev = array2[0];
+  int count = 0;
+
 
   for (int i = 0; i < rows; i++)
   {
@@ -41,14 +41,17 @@ try
     {
       if (array2[j] > array2[j + 1])
       {
-        int count2 = array2[j];
-        array2[j] = array2[j + 1];
-        array2[j + 1] = count2;
+        int count2 = array2[j + 1];
+        array2[j + 1] = array2[j];
+        array2[j] = count2;
       }
     }
   }
+  CW("");
 
-  for (int i = 1; i < array2.Length; i++)
+  int prev = array2[0];
+
+  for (int i = 0; i < array2.Length; i++)
   {
     if (prev == array2[i]) count++;
     else
@@ -58,5 +61,6 @@ try
       count = 1;
     }
   }
+  CW($"{prev} встречается {count} раз");
 }
 catch (InvalidCastException e) { }
