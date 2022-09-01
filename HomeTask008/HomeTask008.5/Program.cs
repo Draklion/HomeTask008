@@ -13,7 +13,7 @@ string CR()
 
 try
 {
-  CW("Задание 5. Программа, которая упорядочит по восратанию элементы каждой строки двумерного массива.");
+  CW("Задание 5. Программа, которая упорядочит по возрастанию элементы каждой строки двумерного массива.");
 
   int rows = new Random().Next(1, 6);
   int columns = new Random().Next(1, 6);
@@ -34,7 +34,7 @@ try
   {
     for (int j = 0; j < array.GetLength(0); j++)
     {
-      for (int k = 0; k < array.GetLength(1) + 1; k++)
+      for (int k = 0; k < array.GetLength(1) - 1; k++)
       {
         if (array[j, k] > array[j, k + 1])
         {
