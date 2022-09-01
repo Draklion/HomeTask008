@@ -43,8 +43,6 @@ try
 
   int rows = new Random().Next(1, 6);
   int columns = new Random().Next(1, 6);
-  int count = 0;
-  int index = 0;
 
   int[,] firstMatrix = new int[rows, columns];
   int[] resultMatrix = new int[rows];
@@ -52,36 +50,26 @@ try
   firstMatrix = Random(rows, columns);
   Print(firstMatrix);
   CW("");
-  if (rows == 1)
-  {
-    CW("В массиве одна строка.");
-  }
+  if (rows == 1) CW("В массиве одна строка.");
 
   else
   {
+    CW("Суммы строк:");
     resultMatrix[0] = 0;
     for (int i = 0; i < firstMatrix.GetLength(0); i++)
     {
       for (int j = 0; j < firstMatrix.GetLength(1); j++) resultMatrix[i] = resultMatrix[i] + firstMatrix[i, j];
-
       CWR(resultMatrix[i].ToString() + "  ");
     }
     CW("");
-    CW("Суммы строк:");
 
     int min = resultMatrix[0];
     for (int i = 1; i < resultMatrix.Length; i++)
     {
       if (min < resultMatrix[i]) continue;
-
-      else
-      {
-        min = resultMatrix[i];
-        index = i;
-      }
+      else min = resultMatrix[i];
     }
-
-    CW(index == 0 ? $"Строка с наименьшей суммой элементов: {index + 1}" : $"Строка с наименьшей суммой элементов: {index + 1}");
+    for (int i = 0; i < resultMatrix.Length; i++) if (min == resultMatrix[i]) CW($"Строка с наименьшей суммой элементов: {i + 1}");
   }
 }
 
