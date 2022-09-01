@@ -1,0 +1,15 @@
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\bin\Debug\net6.0\HomeTask008.7.exe
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\bin\Debug\net6.0\HomeTask008.7.deps.json
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\bin\Debug\net6.0\HomeTask008.7.runtimeconfig.json
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\bin\Debug\net6.0\HomeTask008.7.dll
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\bin\Debug\net6.0\HomeTask008.7.pdb
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\HomeTask008.7.csproj.AssemblyReference.cache
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\HomeTask008.7.GeneratedMSBuildEditorConfig.editorconfig
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\HomeTask008.7.AssemblyInfoInputs.cache
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\HomeTask008.7.AssemblyInfo.cs
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\HomeTask008.7.csproj.CoreCompileInputs.cache
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\HomeTask008.7.dll
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\refint\HomeTask008.7.dll
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\HomeTask008.7.pdb
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\HomeTask008.7.genruntimeconfig.cache
+E:\Workflow\Lessons C#\HomeTask008\HomeTask008\HomeTask008.7\obj\Debug\net6.0\ref\HomeTask008.7.dll
