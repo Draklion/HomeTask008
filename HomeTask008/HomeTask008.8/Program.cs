@@ -47,36 +47,39 @@ try
   int[,] Matrix = new int[rows, columns];
   int[,] resultMatrix = new int[rows - 1, columns - 1];
   int index1 = 0, index2 = 0;
-  if (rows == 1 || columns == 1) { }
-  Matrix = Random(rows, columns);
-  Print(Matrix);
-  CW("");
-  int min = Matrix[0, 0];
-  for (int i = 0; i < Matrix.GetLength(0) * Matrix.GetLength(1); i++)
+  if (rows == 1 || columns == 1) CW("Матрица содержит одну строку или один столбец. Выполнение программы невозможно.");
+  else
   {
-    for (int j = 0; j < Matrix.GetLength(0); j++)
+    Matrix = Random(rows, columns);
+    Print(Matrix);
+    CW("");
+    int min = Matrix[0, 0];
+    for (int i = 0; i < Matrix.GetLength(0) * Matrix.GetLength(1); i++)
     {
-      for (int k = 0; k < Matrix.GetLength(1); k++)
+      for (int j = 0; j < Matrix.GetLength(0); j++)
       {
-        if (min < Matrix[j, k]) continue;
-        else min = Matrix[j, k];
-        index1 = j;
-        index2 = k;
+        for (int k = 0; k < Matrix.GetLength(1); k++)
+        {
+          if (min < Matrix[j, k]) continue;
+          else min = Matrix[j, k];
+          index1 = j;
+          index2 = k;
+        }
       }
     }
-  }
 
-  for (int i = 0, j = 0; i < Matrix.GetLength(0); i++, j++)
-  {
-    if (index1 != i)
+    for (int i = 0, j = 0; i < Matrix.GetLength(0); i++, j++)
     {
-      for (int n = 0, m = 0; n < Matrix.GetLength(1); n++, m++)
-        if (index2 != n)
-          resultMatrix[j, m] = Matrix[i, n];
-        else m--;
+      if (index1 != i)
+      {
+        for (int n = 0, m = 0; n < Matrix.GetLength(1); n++, m++)
+          if (index2 != n)
+            resultMatrix[j, m] = Matrix[i, n];
+          else m--;
+      }
+      else j--;
     }
-    else j--;
+    Print(resultMatrix);
   }
-  Print(resultMatrix);
 }
 catch (InvalidCastException e) { }
